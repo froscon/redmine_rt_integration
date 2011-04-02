@@ -6,7 +6,7 @@ Redmine::Plugin.register :redmine_rt_integration do
   name 'Redmine RT Integration plugin'
   author 'Daniel Lehmann'
   description 'This plugins allows the integration of RT ticket references.'
-  version '1.0.0'
+  version '1.0.1'
   url 'http://github.com/froscon/redmine_rt_integration'
   author_url 'http://froscon.org'
 

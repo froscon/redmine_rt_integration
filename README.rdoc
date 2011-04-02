@@ -26,6 +26,10 @@ No additional configuration is necessary.
 
 === Changelog
 
+==== 1.0.1
+
+* Removed debug-statements
+
 ==== 1.0.0
 
 * Initial release
