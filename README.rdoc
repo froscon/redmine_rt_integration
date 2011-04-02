@@ -1,0 +1,31 @@
+== Redmine RT Integration
+
+Plugin which integrates Request Tracker into redmine.
+
+* Introduces a new Macro {{rt(444)}} which creates a link to ticket 444 in the request tracker.
+* If there is a custom field with name "RT-Referenz" (type text) in the issue show view the values are converted to links to RT
+
+Please note: currently all links are hardcoded an link to the FrOSCon RT.
+
+=== Prerequisite
+
+There are no prerequisites.
+
+=== Installation
+
+Download the sources and put them to your vendor/plugins folder.
+
+    $ cd {REDMINE_ROOT}
+    $ git clone git://github.com/froscon/redmine_rt_integration vendor/plugins/redmine_rt_integration
+
+No additional configuration is necessary.
+
+=== ToDO
+
+* Make RT-Link configurable.
+
+=== Changelog
+
+==== 1.0.0
+
+* Initial release

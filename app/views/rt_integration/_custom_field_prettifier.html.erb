@@ -1,0 +1,20 @@
+leh leh leh
+<% javascript_tag do -%>
+  Event.observe(window, 'load', function() {
+    $$('div.issue table.attributes tr').each(function(el) {
+      th = el.select('th').first();
+      if(th != undefined && th.innerHTML == "RT-Referenz:") {
+        td = el.select('td').first();
+        ticketIds = td.innerHTML;
+        if(ticketIds != "") {
+          td.innerHTML = "";
+          ticketIds.split(" ").each(function(ticketId) {
+            url = "https://management.froscon.de/rt/Ticket/Display.html?id=" + ticketId;
+            link = "<a href=\"" + url + "\">" + ticketId + "</a>&nbsp;";
+            td.innerHTML += link;
+          });
+       }
+     }
+    });
+  });
+<% end -%>
